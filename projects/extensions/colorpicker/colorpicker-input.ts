@@ -67,7 +67,7 @@ export type ColorFormat = 'hex' | 'rgb' | 'hsl' | 'hsv';
     '[attr.aria-haspopup]': '_picker ? "dialog" : null',
     '[attr.aria-owns]': '(_picker?.opened && _picker.id) || null',
     '[disabled]': 'disabled',
-    '(input)': '_onInput($event.target.value)',
+    '(input)': '_onInput($event)',
     '(change)': '_onChange()',
     '(blur)': '_onBlur()',
     '(keydown)': '_onKeydown($event)',
@@ -255,7 +255,8 @@ export class MtxColorpickerInput implements ControlValueAccessor, AfterViewInit,
     this._onTouched();
   }
 
-  _onInput(value: string) {
+  _onInput(event: Event): void {
+    const value = (event.target as HTMLInputElement).value;
     const nextValue = value;
 
     this._value = nextValue;
@@ -277,4 +278,6 @@ export class MtxColorpickerInput implements ControlValueAccessor, AfterViewInit,
   private _formatValue(value: string | null) {
     this._elementRef.nativeElement.value = value ? value : '';
   }
+
+  protected readonly HTMLInputElement = HTMLInputElement;
 }

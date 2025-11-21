@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { A11yModule } from '@angular/cdk/a11y';
 import { OverlayModule } from '@angular/cdk/overlay';
 import { CdkScrollableModule } from '@angular/cdk/scrolling';
-import { MatCommonModule } from '@angular/material/core';
+import { MatOptionModule } from '@angular/material/core';
 import { MtxPipesModule } from '@ng-matero/extensions/core';
 import {
   MtxTooltip,
@@ -16,12 +16,12 @@ import {
     A11yModule,
     CommonModule,
     OverlayModule,
-    MatCommonModule,
+    MatOptionModule,
     MtxPipesModule,
     MtxTooltip,
     TooltipComponent,
   ],
-  exports: [MtxTooltip, TooltipComponent, MatCommonModule, CdkScrollableModule],
+  exports: [MtxTooltip, TooltipComponent, MatOptionModule, CdkScrollableModule],
   providers: [MTX_TOOLTIP_SCROLL_STRATEGY_FACTORY_PROVIDER],
 })
 export class MtxTooltipModule {}

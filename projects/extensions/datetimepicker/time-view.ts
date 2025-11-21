@@ -122,12 +122,12 @@ export class MtxTimeInput implements OnDestroy {
     return !this.valid;
   }
 
-  blur() {
+  blur(event: Event) {
     this.writeValue(this._value);
     this.writePlaceholder(this._value);
   }
 
-  focus() {
+  focus(event: Event) {
     this.writeValue('');
   }
 
