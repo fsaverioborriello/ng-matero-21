@@ -1,14 +1,15 @@
 {
-  "name": "@ng-matero/extensions",
-  "version": "20.3.1",
-  "description": "Angular Material Extensions",
+  "name": "@fsaverioborriello/ng-matero-extensions",
+  "version": "21.0.0-beta.1",
+  "description": "Fork personalizzato di NG-Matero compatibile con Angular 21",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
   },
-  "author": "nzbin<nzb329@163.com>",
+  "author": "nzbin <nzb329@163.com> (modificato da Francesco Saverio)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ng-matero/extensions.git"
+    "url": "git+https://github.com/fsaverioborriello/ng-matero-21.git"
   },
   "keywords": [
     "angular",
@@ -31,36 +32,12 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ng-matero/extensions/issues"
+    "url": "https://github.com/fsaverioborriello/ng-matero-21/issues"
   },
-  "homepage": "https://ng-matero.github.io/extensions/",
+  "homepage": "https://github.com/fsaverioborriello/ng-matero-21",
   "exports": {
     ".": {
       "sass": "./_index.scss"
-    },
-    "./prebuilt-themes/indigo-pink.css": {
-      "style": "./prebuilt-themes/indigo-pink.css"
-    },
-    "./prebuilt-themes/deeppurple-amber.css": {
-      "style": "./prebuilt-themes/deeppurple-amber.css"
-    },
-    "./prebuilt-themes/pink-bluegrey.css": {
-      "style": "./prebuilt-themes/pink-bluegrey.css"
-    },
-    "./prebuilt-themes/purple-green.css": {
-      "style": "./prebuilt-themes/purple-green.css"
-    },
-    "./prebuilt-themes/azure-blue.css": {
-      "style": "./prebuilt-themes/azure-blue.css"
-    },
-    "./prebuilt-themes/rose-red.css": {
-      "style": "./prebuilt-themes/rose-red.css"
-    },
-    "./prebuilt-themes/cyan-orange.css": {
-      "style": "./prebuilt-themes/cyan-orange.css"
-    },
-    "./prebuilt-themes/magenta-violet.css": {
-      "style": "./prebuilt-themes/magenta-violet.css"
     },
     "./prebuilt-themes/*": {
       "style": "./prebuilt-themes/*.css"
@@ -73,10 +50,10 @@
     "tslib": "^2.4.0"
   },
   "peerDependencies": {
-    "@angular/cdk": ">=20.1.0",
-    "@angular/common": ">=20.1.0",
-    "@angular/core": ">=20.1.0",
-    "@angular/material": ">=20.1.0"
+    "@angular/cdk": ">=21.0.0",
+    "@angular/common": ">=21.0.0",
+    "@angular/core": ">=21.0.0",
+    "@angular/material": ">=21.0.0"
   },
   "sideEffects": false
 }
