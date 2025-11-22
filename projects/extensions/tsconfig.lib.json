@@ -23,7 +23,8 @@
     "fullTemplateTypeCheck": true,
     "skipTemplateCodegen": true,
     "strictMetadataEmit": true,
-    "strictInjectionParameters": true
+    "strictInjectionParameters": true,
+    "compilationMode": "partial"
   },
   "files": [
     "public-api.ts"

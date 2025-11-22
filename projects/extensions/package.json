@@ -1,6 +1,6 @@
 {
-  "name": "@fsaverioborriello/ng-matero-extensions",
-  "version": "21.0.0-beta.1",
+  "name": "@ng-matero/extensions",
+  "version": "21.0.0-beta.2",
   "description": "Fork personalizzato di NG-Matero compatibile con Angular 21",
   "publishConfig": {
     "access": "public",
